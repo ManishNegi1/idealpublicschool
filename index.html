@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Public School | Shaping Futures</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Ideal Public School Logo">
+                <span>IDEAL PUBLIC SCHOOL</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="fee.html">Fee Structure</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="slider-container">
+    <div class="slider">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('https://images.unsplash.com/photo-1541339907198-e08756dee81c?q=80&w=1600');">
+            <div class="slide-content">
+                <span class="estd-tag">ESTD. 2007</span>
+                <h1>Excellence in <span>Education</span></h1>
+                <p>Nurturing young minds under the blessings of Saraswati Mata.</p>
+                <a href="contact.html" class="btn primary-btn">Apply Now</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600');">
+            <div class="slide-content">
+                <h1>Modern <span>Labs & Facilities</span></h1>
+                <p>Providing the best tools for the scientists of tomorrow.</p>
+                <a href="#gallery" class="btn primary-btn">View Gallery</a>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1600');">
+            <div class="slide-content">
+                <h1>Championing <span>Sports</span></h1>
+                <p>Building character and teamwork on the field.</p>
+                <a href="fees.html" class="btn primary-btn">Admission Details</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+    <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</section>
+
+    <section class="info-grid section">
+    <div class="container grid-container">
+        
+        <div class="welcome-text">
+            <h2>Welcome to Ideal Public School</h2>
+            <p>Under the divine blessings of Saraswati Mata, we strive to provide an environment where excellence meets tradition. Since 2007, we have been committed to nurturing young minds.</p>
+            <a href="about.html" class="btn-link">Read More &rarr;</a>
+        </div>
+
+        <div class="notice-board">
+            <div class="notice-header">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Latest Notices</h3>
+            </div>
+            <div class="notice-content">
+                <div class="notice-item">
+                    <span class="date">Oct 25</span>
+                    <p>Annual Sports Day 2024 scheduled for next month. Registration open!</p>
+                </div>
+                <div class="notice-item">
+                    <span class="date">Oct 20</span>
+                    <p>Parent-Teacher Meeting (PTM) for all classes on Saturday.</p>
+                </div>
+                <div class="notice-item">
+                    <span class="date">Oct 15</span>
+                    <p>Dussehra Holidays from Oct 22nd to Oct 24th.</p>
+                </div>
+                <div class="notice-item">
+                    <span class="date">Oct 10</span>
+                    <p>First Terminal Examination results have been declared.</p>
+                </div>
+            </div>
+            <div class="notice-footer">
+                <marquee behavior="scroll" direction="left">Admission Open for Session 2025-26 | Limited Seats Available!</marquee>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="about" class="section">
+        <h2>About Our School</h2>
+        <div class="container">
+            <p>Ideal Public School has been a cornerstone of academic excellence since 2007. We focus on holistic development, blending modern technology with traditional values under the blessings of Saraswati Mata.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+    <div class="container">
+        <h2 class="section-title">Campus Life & Gallery</h2>
+        <p class="section-subtitle">Glimpses of excellence and activities at Ideal Public School</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=600&q=80" alt="School Building">
+                <div class="overlay"><span>Our Campus</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Classroom">
+                <div class="overlay"><span>Smart Classrooms</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Science Lab">
+                <div class="overlay"><span>Science Lab</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef1460375e?auto=format&fit=crop&w=600&q=80" alt="Library">
+                <div class="overlay"><span>Library</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80" alt="Annual Function">
+                <div class="overlay"><span>Cultural Events</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80" alt="Sports">
+                <div class="overlay"><span>Sports Day</span></div>
+            </div>
+        </div>
+        
+        <div class="gallery-footer">
+            <a href="gallery.html" class="btn-outline">View All Photos</a>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="section">
+    <div class="container">
+        <h2 class="section-title">Event Highlights</h2>
+        <p class="section-subtitle">A glimpse into life at Ideal Public School</p>
+
+        <div class="gallery-tabs">
+            <button class="tab-btn active" onclick="filterGallery('all')">All</button>
+            <button class="tab-btn" onclick="filterGallery('annual')">Annual Day</button>
+            <button class="tab-btn" onclick="filterGallery('sports')">Sports</button>
+            <button class="tab-btn" onclick="filterGallery('campus')">Campus</button>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-box annual">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=500" alt="Annual Day">
+                <div class="box-content"><span>Annual Day 2024</span></div>
+            </div>
+
+            <div class="gallery-box sports">
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=500" alt="Sports Meet">
+                <div class="box-content"><span>Sports Meet</span></div>
+            </div>
+
+            <div class="gallery-box campus">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=500" alt="Library">
+                <div class="box-content"><span>Our Library</span></div>
+            </div>
+
+            </div>
+    </div>
+</section>
+
+<section class="teacher-section section">
+    <div class="container">
+        <h2 class="section-title">Words from Our Educators</h2>
+        <p class="section-subtitle">The dedicated minds shaping the future of our students.</p>
+
+        <div class="testimonial-slider-wrapper">
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="teacher-image">
+                        <img src="https://images.unsplash.com/photo-1544717297-fa154da09f9b?q=80&w=400" alt="Principal">
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"At Ideal Public School, we nurture character and curiosity. It's a joy to see our students grow every day."</p>
+                        <h4>Mrs. Anjali Sharma</h4>
+                        <span>Principal (MA, B.Ed)</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="teacher-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400" alt="Senior Teacher">
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"The balance between technology and tradition here is what makes our teaching truly effective."</p>
+                        <h4>Ms. Priya Verma</h4>
+                        <span>Senior Coordinator</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="teacher-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400" alt="Math Teacher">
+                    </div>
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Seeing a student finally 'click' with a difficult concept is why I teach. Ideal provides that platform."</p>
+                        <h4>Mr. Rajesh Gupta</h4>
+                        <span>HOD Mathematics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="main-footer">
+    <div class="footer-wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <div class="container footer-grid">
+        <div class="footer-col brand-col">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Ideal Public School">
+                <h3>IDEAL <span>PUBLIC SCHOOL</span></h3>
+            </div>
+            <p class="brand-desc">
+                Empowering students since 2007 with modern innovation and traditional values under the divine blessings of Saraswati Mata.
+            </p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Our Mission</a></li>
+                <li><a href="gallery.html">Campus Gallery</a></li>
+                <li><a href="fees.html">Fee Structure</a></li>
+                <li><a href="#contact">Admission Portal</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Reach Out</h4>
+            <ul class="contact-info">
+                <li>
+                    <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+                    <span>Sector 4, Your City, <br>State - 123456</span>
+                </li>
+                <li>
+                    <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+                    <span>+91 98765 43210</span>
+                </li>
+                <li>
+                    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+                    <span>info@idealpublicschool.com</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-col map-col">
+            <h4>Find Us</h4>
+            <div class="mini-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.56206161726!2d77.22731!3d28.6129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzQ2LjQiTiA3N8KwMTMnMzguMyJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="150" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container bottom-flex">
+            <p>&copy; 2026 Ideal Public School. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

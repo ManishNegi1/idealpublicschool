@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ideal Public School</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Ideal Public School Logo">
+                <span>IDEAL PUBLIC SCHOOL</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="fee.html">Fee Structure</a></li>
+                <li><a href="index.html#gallery" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="section detailed-gallery">
+    <div class="container">
+        <div class="gallery-nav">
+            <a href="gallery.html" class="back-link">← Back to All Events</a>
+        </div>
+
+        <div class="album-header">
+            <h1>Annual Cultural Fest <span class="year">2024</span></h1>
+            <p>A celebration of art, music, and the vibrant spirit of our students.</p>
+            <div class="album-meta">
+                <span><i class="fas fa-image"></i> 24 Photos</span>
+                <span><i class="fas fa-calendar-alt"></i> March 15, 2024</span>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <div class="photo-item wide">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800" alt="Cultural Dance" onclick="openLightbox(this.src)">
+            </div>
+            <div class="photo-item">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=400" alt="Student Singing" onclick="openLightbox(this.src)">
+            </div>
+            <div class="photo-item">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=400" alt="Stage Decor" onclick="openLightbox(this.src)">
+            </div>
+            <div class="photo-item tall">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=500" alt="Award Ceremony" onclick="openLightbox(this.src)">
+            </div>
+            <div class="photo-item">
+                <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=400" alt="Drama Performance" onclick="openLightbox(this.src)">
+            </div>
+            </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    
+    <button class="lb-nav prev" onclick="changeImage(-1, event)">&#10094;</button>
+    <button class="lb-nav next" onclick="changeImage(1, event)">&#10095;</button>
+
+    <div class="lb-content">
+        <img id="lightbox-img" src="" alt="Full View" onclick="event.stopPropagation()">
+    </div>
+</div>
+</section>
+
+    <footer>
+        <p>&copy; 2026 Ideal Public School. All Rights Reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
